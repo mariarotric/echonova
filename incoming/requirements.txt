@@ -1,0 +1,12 @@
+# EchoNova Milestone 1 dependencies.
+# Kept deliberately minimal per CLAUDE.md / DECISIONS.md D-001 (no unnecessary
+# dependencies, no ML libraries yet — those are introduced only when a later
+# milestone's experiments justify them).
+
+numpy==2.4.4
+scipy==1.17.1
+librosa==1.0.0
+soundfile==0.14.0
+
+# Dev/test only
+pytest==9.1.1

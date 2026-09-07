@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "milestone": "1",
+  "file": "data/raw_wav/example_synthetic_vowel.wav",
+  "audio": {
+    "sample_rate_hz": 22050,
+    "channels": 1,
+    "duration_seconds": 3.8,
+    "sample_count": 83790,
+    "bit_depth": 16,
+    "subtype": "PCM_16",
+    "format": "WAV"
+  },
+  "preprocessing": {
+    "target_sample_rate_hz": 16000,
+    "was_resampled": true,
+    "was_downmixed_to_mono": false,
+    "silence_trim_top_db": 30,
+    "silence_trimmed_seconds_start": 0.416,
+    "silence_trimmed_seconds_end": 0.376,
+    "was_normalized": true,
+    "normalization_peak_target": 0.98,
+    "duration_after_seconds": 3.008
+  },
+  "signal_quality": {
+    "duration_seconds": 3.008,
+    "rms_energy": 0.4132,
+    "peak_amplitude": 0.98,
+    "clipping_percentage": 0.0,
+    "silence_ratio": 0.0,
+    "snr_estimate_db": 15.68,
+    "snr_method": "Percentile-based proxy: difference between the 95th and 10th percentile of per-frame RMS energy (25ms frames, 10ms hop). Not a substitute for a true noise-reference SNR measurement.",
+    "estimated_bandwidth_hz": 289.1,
+    "nyquist_hz": 8000.0,
+    "quality_score": 0.564,
+    "parameters": {
+      "clipping_threshold": 0.99,
+      "frame_ms": 25,
+      "hop_ms": 10,
+      "silence_frame_db_threshold": -40.0,
+      "snr_noise_percentile": 10,
+      "snr_signal_percentile": 95,
+      "bandwidth_energy_fraction": 0.95,
+      "quality_score_weights": {
+        "snr": 0.4,
+        "clipping": 0.25,
+        "silence_ratio": 0.15,
+        "bandwidth": 0.2
+      }
+    }
+  },
+  "acoustic_analysis": {
+    "f0": {
+      "mean_hz": 140.14,
+      "median_hz": 140.14,
+      "std_hz": 1.43,
+      "min_hz": 137.73,
+      "max_hz": 142.59,
+      "voiced_frame_ratio": 1.0,
+      "search_range_hz": [
+        65.0,
+        400.0
+      ]
+    },
+    "mfcc": {
+      "n_mfcc": 13,
+      "mean_per_coefficient": [
+        -196.85252380470408,
+        57.255233277259876,
+        43.75184733644536,
+        33.04292725864684,
+        11.68885066122988,
+        1.1497583154339068,
+        -13.694051075665115,
+        -13.277275536027172,
+        -17.601940090589515,
+        -8.660635709026803,
+        -9.58522653560763,
+        -0.3275183308819754,
+        -2.9985509209292402
+      ],
+      "std_per_coefficient": [
+        15.906324728814772,
+        11.045403015956243,
+        8.276048481288694,
+        5.440819980116092,
+        2.77343772355027,
+        3.0152065533376504,
+        5.219453591095866,
+        5.699742279501479,
+        5.196327837308395,
+        3.9359839725552472,
+        3.2147929869089698,
+        2.7492760354837373,
+        2.5468228757882487
+      ]
+    },
+    "spectral_centroid": {
+      "mean_hz": 1147.72,
+      "std_hz": 572.49
+    },
+    "spectral_bandwidth": {
+      "mean_hz": 1802.22,
+      "std_hz": 340.03
+    },
+    "zero_crossing_rate": {
+      "mean": 0.029862,
+      "std": 0.021057
+    }
+  },
+  "warnings": [],
+  "error": null
+}
